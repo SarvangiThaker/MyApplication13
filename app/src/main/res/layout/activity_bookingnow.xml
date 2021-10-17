@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack">
+<ImageView
+    android:id="@+id/iv"
+    android:layout_marginTop="70dp"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:src="@drawable/cc"
+    android:textColor="@color/colorWhite"
+    />
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_below="@id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:textColorHint="@color/colorWhite"
+        android:hint="ServicesName"
+        android:inputType="textPassword"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shapes"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="20dp"/>
+    <EditText
+        android:id="@+id/edt3"
+        android:layout_below="@id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:textColorHint="@color/colorWhite"
+        android:hint="Time"
+        android:inputType="textPassword"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shapes"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ic_timer_black_24dp"
+        android:drawablePadding="20dp"/>
+    <EditText
+        android:id="@+id/edt4"
+        android:layout_below="@id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:textColorHint="@color/colorWhite"
+        android:hint="Prize"
+        android:inputType="textPassword"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shapes"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+        android:drawablePadding="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/btn"
+        android:layout_marginTop="50dp"
+        android:text="Submit"
+        android:background="@drawable/messagenow">
+
+    </Button>
+
+
+
+    </LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorBlack">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/parlor"
+        android:textColor="@color/colorWhite"
+        />
+    <TextView
+        android:id="@+id/edt1"
+        android:layout_below="@id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Parlor Name"
+        android:padding="10dp"
+        android:textColor="@color/colorWhite"
+
+        android:drawableLeft="@drawable/ic_people_black_24dp"
+        android:drawablePadding="20dp"/>
+
+    <TextView
+        android:id="@+id/edt2"
+        android:layout_below="@id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Contact"
+        android:padding="10dp"
+        android:textColor="@color/colorWhite"
+
+        android:drawableLeft="@drawable/ic_contact_phone_black_24dp"
+        android:drawablePadding="20dp"
+        />
+    <TextView
+        android:id="@+id/edt3"
+        android:layout_below="@id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Address"
+        android:padding="10dp"
+        android:textColor="@color/colorWhite"
+
+        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+        android:drawablePadding="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/booknow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt3"
+        android:layout_marginTop="40dp"
+        android:text="Book Now"
+        android:background="@drawable/messagenow"
+        android:textColor="@color/colorWhite"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@drawable/cc"
+        />
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_below="@id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:hint="Username"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shapes"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="20dp"/>
+
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:textColorHint="@color/colorWhite"
+        android:hint="Email"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/edt1"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shapes"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawablePadding="20dp"/>
+
+    <EditText
+        android:id="@+id/edt3"
+        android:layout_below="@id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/colorWhite"
+        android:ems="10"
+        android:hint="Password"
+        android:paddingLeft="10dp"
+        android:inputType="textPassword"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shapes"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:drawablePadding="20dp"/>
+
+
+    <EditText
+        android:id="@+id/edt4"
+        android:layout_below="@id/edt3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/colorWhite"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:paddingLeft="10dp"
+        android:inputType="textPassword"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shapes"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="20dp"/>
+    <EditText
+        android:id="@+id/edt5"
+        android:layout_below="@id/edt4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:textColorHint="@color/colorWhite"
+        android:hint="ph-no"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shapes"
+        android:drawableLeft="@drawable/ic_contact_phone_black_24dp"
+        android:drawablePadding="25dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/edt5"
+        android:id="@+id/rg"
+        android:paddingTop="20dp"
+        >
+        <RadioButton
+            android:id="@+id/rdo_parlour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="parlor"
+            android:textColor="@color/colorWhite"/>
+        <RadioButton
+            android:id="@+id/rdo_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer"
+            android:checked="true"
+            android:textColor="@color/colorWhite"/>
+    </RadioGroup>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg"
+        android:id="@+id/singup"
+        android:layout_marginTop="40dp"
+        android:text="signup"
+        android:background="@drawable/messagenow"
+        android:textColor="@color/colorWhite"
+        android:layout_width="match_parent" />
+
+</RelativeLayout>

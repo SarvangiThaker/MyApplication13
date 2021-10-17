@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack">
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@drawable/cc"
+        />
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_below="@id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:hint="Number"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shapes"
+        android:drawableLeft="@drawable/ic_contact_phone_black_24dp"
+        android:drawablePadding="20dp"/>
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_below="@id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:textColorHint="@color/colorWhite"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shapes"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:drawablePadding="20dp"/>
+
+
+
+</RelativeLayout>
